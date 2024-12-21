@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="1" />
+		<string key="creator" value="Fluxicon Nitro" />
+		<event>
+			<string key="concept:name" value="examine casually" />
+			<string key="org:resource" value="Sean" />
+			<date key="time:timestamp" value="2010-12-30T14:16:00+00:00" />
+			<string key="Activity" value="examine casually" />
+			<string key="Resource" value="Sean" />
+			<string key="Costs" value="400" />
+		</event>
+		<event>
+			<string key="concept:name" value="decide" />
+			<string key="org:resource" value="Sara" />
+			<date key="time:timestamp" value="2011-01-05T11:22:00+00:00" />
+			<string key="Activity" value="decide" />
+			<string key="Resource" value="Sara" />
+			<string key="Costs" value="200" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="0" />
+		<string key="creator" value="Fluxicon Nitro" />
+		<event>
+			<string key="concept:name" value="examine casually" />
+			<string key="org:resource" value="Sue" />
+			<date key="time:timestamp" value="2010-12-31T10:06:00+00:00" />
+			<string key="Activity" value="examine casually" />
+			<string key="Resource" value="Sue" />
+			<string key="Costs" value="400" />
+		</event>
+		<event>
+			<string key="concept:name" value="decide" />
+			<string key="org:resource" value="Sara" />
+			<date key="time:timestamp" value="2011-01-06T11:18:00+00:00" />
+			<string key="Activity" value="decide" />
+			<string key="Resource" value="Sara" />
+			<string key="Costs" value="200" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="3" />
+		<string key="creator" value="Fluxicon Nitro" />
+		<event>
+			<string key="concept:name" value="examine casually" />
+			<string key="org:resource" value="Ellen" />
+			<date key="time:timestamp" value="2011-01-06T16:06:00+00:00" />
+			<string key="Activity" value="examine casually" />
+			<string key="Resource" value="Ellen" />
+			<string key="Costs" value="400" />
+		</event>
+		<event>
+			<string key="concept:name" value="decide" />
+			<string key="org:resource" value="Sara" />
+			<date key="time:timestamp" value="2011-01-07T16:52:00+00:00" />
+			<string key="Activity" value="decide" />
+			<string key="Resource" value="Sara" />
+			<string key="Costs" value="200" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="2" />
+		<string key="creator" value="Fluxicon Nitro" />
+		<event>
+			<string key="concept:name" value="examine thoroughly" />
+			<string key="org:resource" value="Sean" />
+			<date key="time:timestamp" value="2011-01-08T14:43:00+00:00" />
+			<string key="Activity" value="examine thoroughly" />
+			<string key="Resource" value="Sean" />
+			<string key="Costs" value="400" />
+		</event>
+		<event>
+			<string key="concept:name" value="decide" />
+			<string key="org:resource" value="Sara" />
+			<date key="time:timestamp" value="2011-01-09T12:02:00+00:00" />
+			<string key="Activity" value="decide" />
+			<string key="Resource" value="Sara" />
+			<string key="Costs" value="200" />
+		</event>
+	</trace>
+</log>

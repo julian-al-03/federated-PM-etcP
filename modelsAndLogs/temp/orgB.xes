@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<log xes.version="1849-2016" xes.features="nested-attributes" xmlns="http://www.xes-standard.org/">
+	<extension name="Organizational" prefix="org" uri="http://www.xes-standard.org/org.xesext" />
+	<extension name="Concept" prefix="concept" uri="http://www.xes-standard.org/concept.xesext" />
+	<extension name="Time" prefix="time" uri="http://www.xes-standard.org/time.xesext" />
+	<string key="origin" value="csv" />
+	<trace>
+		<string key="concept:name" value="1" />
+		<string key="creator" value="Fluxicon Nitro" />
+		<event>
+			<string key="concept:name" value="register request" />
+			<string key="org:resource" value="Mike" />
+			<date key="time:timestamp" value="2010-12-30T11:32:00+00:00" />
+			<string key="Activity" value="register request" />
+			<string key="Resource" value="Mike" />
+			<string key="Costs" value="50" />
+		</event>
+		<event>
+			<string key="concept:name" value="check ticket" />
+			<string key="org:resource" value="Mike" />
+			<date key="time:timestamp" value="2010-12-30T12:12:00+00:00" />
+			<string key="Activity" value="check ticket" />
+			<string key="Resource" value="Mike" />
+			<string key="Costs" value="100" />
+		</event>
+		<event>
+			<string key="concept:name" value="pay compensation" />
+			<string key="org:resource" value="Ellen" />
+			<date key="time:timestamp" value="2011-01-08T12:05:00+00:00" />
+			<string key="Activity" value="pay compensation" />
+			<string key="Resource" value="Ellen" />
+			<string key="Costs" value="200" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="0" />
+		<string key="creator" value="Fluxicon Nitro" />
+		<event>
+			<string key="concept:name" value="register request" />
+			<string key="org:resource" value="Pete" />
+			<date key="time:timestamp" value="2010-12-30T11:02:00+00:00" />
+			<string key="Activity" value="register request" />
+			<string key="Resource" value="Pete" />
+			<string key="Costs" value="50" />
+		</event>
+		<event>
+			<string key="concept:name" value="check ticket" />
+			<string key="org:resource" value="Mike" />
+			<date key="time:timestamp" value="2011-01-05T15:12:00+00:00" />
+			<string key="Activity" value="check ticket" />
+			<string key="Resource" value="Mike" />
+			<string key="Costs" value="100" />
+		</event>
+		<event>
+			<string key="concept:name" value="reject request" />
+			<string key="org:resource" value="Pete" />
+			<date key="time:timestamp" value="2011-01-07T14:24:00+00:00" />
+			<string key="Activity" value="reject request" />
+			<string key="Resource" value="Pete" />
+			<string key="Costs" value="200" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="3" />
+		<string key="creator" value="Fluxicon Nitro" />
+		<event>
+			<string key="concept:name" value="register request" />
+			<string key="org:resource" value="Mike" />
+			<date key="time:timestamp" value="2011-01-06T15:02:00+00:00" />
+			<string key="Activity" value="register request" />
+			<string key="Resource" value="Mike" />
+			<string key="Costs" value="50" />
+		</event>
+		<event>
+			<string key="concept:name" value="check ticket" />
+			<string key="org:resource" value="Mike" />
+			<date key="time:timestamp" value="2011-01-07T16:22:00+00:00" />
+			<string key="Activity" value="check ticket" />
+			<string key="Resource" value="Mike" />
+			<string key="Costs" value="100" />
+		</event>
+		<event>
+			<string key="concept:name" value="pay compensation" />
+			<string key="org:resource" value="Mike" />
+			<date key="time:timestamp" value="2011-01-16T11:47:00+00:00" />
+			<string key="Activity" value="pay compensation" />
+			<string key="Resource" value="Mike" />
+			<string key="Costs" value="200" />
+		</event>
+	</trace>
+	<trace>
+		<string key="concept:name" value="2" />
+		<string key="creator" value="Fluxicon Nitro" />
+		<event>
+			<string key="concept:name" value="register request" />
+			<string key="org:resource" value="Pete" />
+			<date key="time:timestamp" value="2011-01-06T15:02:00+00:00" />
+			<string key="Activity" value="register request" />
+			<string key="Resource" value="Pete" />
+			<string key="Costs" value="50" />
+		</event>
+		<event>
+			<string key="concept:name" value="check ticket" />
+			<string key="org:resource" value="Mike" />
+			<date key="time:timestamp" value="2011-01-07T12:06:00+00:00" />
+			<string key="Activity" value="check ticket" />
+			<string key="Resource" value="Mike" />
+			<string key="Costs" value="100" />
+		</event>
+		<event>
+			<string key="concept:name" value="reject request" />
+			<string key="org:resource" value="Ellen" />
+			<date key="time:timestamp" value="2011-01-12T15:44:00+00:00" />
+			<string key="Activity" value="reject request" />
+			<string key="Resource" value="Ellen" />
+			<string key="Costs" value="200" />
+		</event>
+	</trace>
+</log>

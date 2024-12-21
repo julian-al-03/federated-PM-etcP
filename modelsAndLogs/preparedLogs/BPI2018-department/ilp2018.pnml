@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<pnml>
+  <net id="ilp" type="http://www.pnml.org/version-2009/grammar/pnmlcoremodel">
+    <name>
+      <text>ilp</text>
+    </name>
+    <page id="n0">
+      <place id="3">
+        <name>
+          <text>3</text>
+        </name>
+      </place>
+      <place id="5">
+        <name>
+          <text>5</text>
+        </name>
+      </place>
+      <place id="8">
+        <name>
+          <text>8</text>
+        </name>
+      </place>
+      <place id="source">
+        <name>
+          <text>source</text>
+        </name>
+        <initialMarking>
+          <text>1</text>
+        </initialMarking>
+      </place>
+      <place id="4">
+        <name>
+          <text>4</text>
+        </name>
+      </place>
+      <place id="sink">
+        <name>
+          <text>sink</text>
+        </name>
+      </place>
+      <place id="6">
+        <name>
+          <text>6</text>
+        </name>
+      </place>
+      <place id="7">
+        <name>
+          <text>7</text>
+        </name>
+      </place>
+      <transition id="performed">
+        <name>
+          <text>performed</text>
+        </name>
+      </transition>
+      <transition id="save">
+        <name>
+          <text>save</text>
+        </name>
+      </transition>
+      <transition id="begin editing">
+        <name>
+          <text>begin editing</text>
+        </name>
+      </transition>
+      <transition id="change department">
+        <name>
+          <text>change department</text>
+        </name>
+      </transition>
+      <transition id="insert document">
+        <name>
+          <text>insert document</text>
+        </name>
+      </transition>
+      <transition id="remove document">
+        <name>
+          <text>remove document</text>
+        </name>
+      </transition>
+      <transition id="■">
+        <name>
+          <text>■</text>
+        </name>
+        <toolspecific tool="ProM" version="6.4" activity="$invisible$" localNodeID="4b6cb9dc-0cc7-451e-ab68-9cad4b681cca"/>
+      </transition>
+      <arc id="4829041664" source="4" target="■"/>
+      <arc id="4829042816" source="5" target="■"/>
+      <arc id="4829043968" source="insert document" target="6"/>
+      <arc id="4829050112" source="8" target="insert document"/>
+      <arc id="4829040272" source="3" target="■"/>
+      <arc id="4829041424" source="begin editing" target="4"/>
+      <arc id="4829050256" source="remove document" target="8"/>
+      <arc id="4829050640" source="8" target="■"/>
+      <arc id="4829048096" source="performed" target="7"/>
+      <arc id="4829042864" source="5" target="save"/>
+      <arc id="4829047856" source="change department" target="7"/>
+      <arc id="4829048240" source="7" target="change department"/>
+      <arc id="4829050160" source="insert document" target="8"/>
+      <arc id="4810086192" source="source" target="performed"/>
+      <arc id="4829041472" source="4" target="begin editing"/>
+      <arc id="4829041616" source="performed" target="4"/>
+      <arc id="4829042768" source="save" target="5"/>
+      <arc id="4829050448" source="8" target="remove document"/>
+      <arc id="4829037152" source="■" target="sink"/>
+      <arc id="4829044064" source="performed" target="6"/>
+      <arc id="4829044832" source="6" target="insert document"/>
+      <arc id="4829040368" source="performed" target="3"/>
+      <arc id="4829042672" source="performed" target="5"/>
+      <arc id="4829044976" source="6" target="■"/>
+      <arc id="4829048048" source="7" target="■"/>
+      <arc id="4829049968" source="performed" target="8"/>
+    </page>
+    <finalmarkings>
+      <marking>
+        <place idref="sink">
+          <text>1</text>
+        </place>
+      </marking>
+    </finalmarkings>
+  </net>
+</pnml>
