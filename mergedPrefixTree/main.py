@@ -365,7 +365,7 @@ def countNodes(trie: Trie):
         stack += current.children
     return count
 
-def mergeTreesInFolder(pathToFolder: str, numCases: int, firstPort: int = 7777, naiveCompare: bool = False, oneIteration: bool = False):
+def mergeTreesInFolder(pathToFolder: str, numCases: int, firstPort: int = 7777, naiveCompare: bool = False, oneIteration: bool = False, store: bool = False):
     # find files in folder
     files = os.listdir(pathToFolder)
     # merge trees
@@ -391,6 +391,9 @@ def mergeTreesInFolder(pathToFolder: str, numCases: int, firstPort: int = 7777, 
         file.write("One iteration: " + str(oneIteration) + "\n")
         file.write("Number of nodes in merged tree: " + str(countNodes(coordinator.mergedPrefixTree)) + "\n")
         file.write("-----------------------------\n")
+    if store:
+        lists = coordinator.getDeanymLists()
+        store_anom_trie(coordinator.mergedPrefixTree, pathToFolder + "/mergedPrefixTree.json", lists)
     coordinator.close()
     return coordinator.mergedPrefixTree
 
@@ -430,7 +433,7 @@ if __name__ == "__main__":
     
     if len(sys.argv) > 1 and sys.argv[1] == "mergeTreesInFolder":
         print(sys.argv)
-        mergeTreesInFolder(sys.argv[2], int(sys.argv[3]), naiveCompare=("naive" in sys.argv), oneIteration=("oneIteration" in sys.argv))
+        mergeTreesInFolder(sys.argv[2], int(sys.argv[3]), naiveCompare=("naive" in sys.argv), oneIteration=("oneIteration" in sys.argv), store=("store" in sys.argv))
 
     elif len(sys.argv) > 1 and sys.argv[1] == "etcP":
         print(sys.argv)
