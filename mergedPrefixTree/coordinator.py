@@ -4,7 +4,6 @@ from socketConn import OrgSocket
 from organization import Organization
 from utils import serealizeAnomTriePrefix, mergeXesLogs
 import pm4py
-import psutil
 from pm4py.objects.petri_net.obj import PetriNet, Marking
 from damgard_jurik_utils.damgard_jurik_local.crypto import keygen, PublicKey, EncryptedNumber
 from utils import serialize_anom_trie

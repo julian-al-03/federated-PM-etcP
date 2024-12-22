@@ -20,7 +20,10 @@ import random
 
 
 
-def splitLogPrompt(log: EventLog):
+def splitLogPrompt():
+    # prompt path to original log
+    originalLogPath = input('Enter path to original log: ')
+    log = pm4py.read_xes(originalLogPath)
     # random.seed(0)
     # prompt the user for the percentage of the log to keep
     keepOriginal = float(input('Enter percentage of the log to keep (0-1): '))
@@ -120,7 +123,7 @@ if __name__ == '__main__':
 
     # splitLogPrompt(pm4py.read_xes('/Users/Studium/Desktop/bachelor_thesis_restart/bachelor_thesis_restart/modelsAndLogs/preparedLogs/BPI2018-department/BPI2018-department-prepared.xes'))
     # splitLogPrompt(pm4py.read_xes('/Users/Studium/Desktop/bachelor_thesis_restart/bachelor_thesis_restart/modelsAndLogs/preparedLogs/sepsis/sepsis_prepared_time_fixed.xes'))
-    splitLogPrompt(pm4py.read_xes('/Users/Studium/Desktop/bachelor_thesis_restart/bachelor_thesis_restart/modelsAndLogs/preparedLogs/road/road-prepared.xes'))
+    splitLogPrompt()
     # splitLogPrompt(pm4py.read_xes('/Users/Studium/Desktop/bachelor_thesis_restart/bachelor_thesis_restart/modelsAndLogs/preparedLogs/2012-prepared.xes'))
 
 
