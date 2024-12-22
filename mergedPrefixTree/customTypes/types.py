@@ -14,8 +14,8 @@ class CandId:
     id: int
     weight: int | None = 0
 
-type OrgId = str
-type Act = str
+OrgId = str
+Act = str
 
 class AnomTrie(Trie):
     def __init__(self, *args, candId=None, **kwargs):
