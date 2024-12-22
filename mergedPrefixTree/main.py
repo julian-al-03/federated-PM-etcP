@@ -1,5 +1,4 @@
 ## main function
-import signal
 from coordinator import Coordinator
 import pm4py
 from customTypes.types import AnomTrie, OrgTrie, Act
